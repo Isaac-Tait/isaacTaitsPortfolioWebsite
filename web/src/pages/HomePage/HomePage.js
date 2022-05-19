@@ -114,7 +114,7 @@ const HomePage = () => {
             </span>
             My{' '}
             <a
-              href="https://mountaintop-coding.s3.us-west-1.amazonaws.com/resume/Isaac's+Tait's+Resume.pdf"
+              href="https://mountaintop-coding.s3.us-west-1.amazonaws.com/Isaac_Tait_Resume_Portfolio.pdf"
               rel="noopener noreferrer"
               className="text-blue-500 underline hover:bg-blue-500 hover:text-white"
             >
