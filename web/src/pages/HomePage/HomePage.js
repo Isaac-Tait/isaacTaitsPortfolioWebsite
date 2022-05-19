@@ -201,7 +201,7 @@ const HomePage = () => {
         {/*Royal Ridges*/}
         <div className="relative box-content w-12 md:w-32 my-auto ml-48 md:ml-0">
           <a
-            href="https://royalridges.camp"
+            href="https://royalridges.org"
             target="_blank"
             rel="noopener noreferrer"
           >
