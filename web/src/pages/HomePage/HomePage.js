@@ -1,15 +1,15 @@
 import { Link, routes } from '@redwoodjs/router'
 
-import Logo from './mtntpcdng_lg.png'
-import fishing from './fishing.png'
-import campFire from './campFire.png'
-import map from './map.png'
-import hikingBoots from './hikingBoots.png'
-import tent from './tent.png'
-import compass from './compass.png'
-import guitar from './guitar.png'
-
 import Footer from '../../components/Footer'
+
+import campFire from './campFire.png'
+import compass from './compass.png'
+import fishing from './fishing.png'
+import guitar from './guitar.png'
+import hikingBoots from './hikingBoots.png'
+import map from './map.png'
+import Logo from './mtntpcdng_lg.png'
+import tent from './tent.png'
 
 const HomePage = () => {
   const callback = function (entries) {

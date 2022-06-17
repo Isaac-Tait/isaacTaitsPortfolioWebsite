@@ -1,9 +1,10 @@
 import { Link, routes } from '@redwoodjs/router'
 
+import Footer from '../../components/Footer'
+
+import logo from './mtntpcdng_lg.png'
 import picture from './profile.jpg'
 import tokyo from './tokyoBay.jpg'
-import logo from './mtntpcdng_lg.png'
-import Footer from '../../components/Footer'
 
 const AboutPage = () => {
   return (
