@@ -14,13 +14,13 @@ const AboutPage = () => {
           <img src={logo} alt="mtntpcdng" />
         </Link>
       </div>
-      <div className="text-lg w-1/3 flex">
-        <div className="mx-4 mb-4">
-          <div className="px-2 h-1/2 bg-indigo-100 overflow-y-scroll mt-4 rounded-sm ml-20">
-            <p className="font-medium text-2xl text-blue-500 tracking-wide text-center bg-pink-300 -pt-4 w-1/3 rounded-lg mx-auto">
+      <div className="text-lg">
+        <div className="grid grid-cols-2 gap-4 mx-4 mb-4">
+          <div className="px-2 h-1/2 bg-indigo-100 overflow-y-scroll mt-4 rounded-sm ml-20 static">
+            <p className="font-medium text-2xl text-white tracking-wide text-center bg-indigo-500 rounded-lg mx-auto absolute -mt-4 px-1">
               About Me
             </p>
-            <p className="mt-2">
+            <p className="mt-6">
               Hello, and welcome to{' '}
               <span className="font-mono">
                 mountainTopCoding(
@@ -89,8 +89,9 @@ const AboutPage = () => {
               Cheers!
             </p>
           </div>
-          <div className="h-1/3 bg-indigo-200 mt-4 ">
-            <p>
+          {/* Column Two */}
+          <div className="h-1/2 bg-indigo-200 mt-4 rounded-sm px-1 mt-20">
+            <p className="text-center">
               Ever since I was a child I have enjoyed writing. I published my
               first book when I was six titled{' '}
               <span className="italic">
