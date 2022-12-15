@@ -22,13 +22,15 @@ module.exports = {
       red: colors.rose,
       yellow: colors.amber,
       blue: colors.blue,
+      green: colors.green,
     },
     linearGradientColors: (theme) => theme('colors'),
     heroPatterns: {
       topography: heropatterns.topography,
+      kiwi: heropatterns.kiwi,
     },
     heroPatternsShades: ['100', '300', '500'],
-    heroPatternsColors: ['blue'],
+    heroPatternsColors: ['blue', 'green'],
     extend: {
       animation: {
         fadeIn: 'fadeIn 3s ease-in forwards',
