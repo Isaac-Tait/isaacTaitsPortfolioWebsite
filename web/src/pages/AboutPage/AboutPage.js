@@ -11,15 +11,15 @@ const AboutPage = () => {
   return (
     <div className=''>
       {/* Header */}
-      <div className="py-1 md:w-1/2 md:mx-auto">
+      <div className="py-1 px-2 md:w-1/2 md:mx-auto">
         <Link to={routes.home()} className="mx-6">
           <img src={logo} alt="mtntpcdng" />
         </Link>
       </div>
 
-      <div className='heropattern-kiwi-blue-100 flex-1'>
+      <div className='flex-1 px-2'>
         <Tab.Group>
-          <Tab.List className="bg-blue-100 flex justify-between font-semibold text-lg px-6 text-gray-700">
+          <Tab.List className="bg-blue-100 flex justify-between font-semibold text-sm md:text-lg px-6 text-gray-700">
             <Tab className="hover:bg-blue-400 rounded-xl px-2 hover:text-white">The Surface of the Moon</Tab>
             <Tab className="hover:bg-blue-400 rounded-xl px-2 hover:text-white">Background</Tab>
             <Tab className="hover:bg-blue-400 rounded-xl px-2 hover:text-white">Designer && Authorpreneur</Tab>
@@ -107,8 +107,8 @@ const AboutPage = () => {
               </div>
             </Tab.Panel>
             {/* Tab Three (3) */}
-            <Tab.Panel className="h-screen max-w-4xl mx-auto">
-              <div>
+            <Tab.Panel>
+              <div className='max-w-6xl mx-auto mt-4 mb-10'>
                   <p
                     className="pt-6 first-line:uppercase first-line:tracking-widest
                           first-letter:text-7xl first-letter:font-bold first-letter:text-slate-900

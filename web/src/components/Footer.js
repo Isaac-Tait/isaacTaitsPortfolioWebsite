@@ -5,7 +5,7 @@ import Logo from '../img/logo-purple.svg'
 const Footer = () => {
   return (
     <div className="flex flex-row justify-between pl-2 text-xs md:text-base bg-blue-500">
-      <div className="md:w-1/3 my-1">
+      <div className="hidden md:block md:w-1/3 my-1">
         <p>
           Built with{' '}
           <a
