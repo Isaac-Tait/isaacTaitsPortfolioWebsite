@@ -1,4 +1,7 @@
 import { Link, routes } from '@redwoodjs/router'
+
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Tab } from '@headlessui/react'
 
 import Footer from '../../components/Footer'
@@ -7,7 +10,8 @@ import logo from './mtntpcdng_lg.png'
 import picture from './profile.jpg'
 import tokyo from './tokyoBay.jpg'
 
-const AboutPage = () => {
+export default function AboutPage() {
+  var Carousel = require('react-responsive-carousel').Carousel;
   return (
     <div className=''>
       {/* Header */}
@@ -20,15 +24,78 @@ const AboutPage = () => {
       <div className='flex-1 px-2'>
         <Tab.Group>
           <Tab.List className="bg-blue-100 flex justify-between font-semibold text-sm md:text-lg px-6 text-gray-700">
-            <Tab className="hover:bg-blue-400 rounded-xl px-2 hover:text-white">The Surface of the Moon</Tab>
+            <Tab className="hover:bg-blue-400 rounded-xl px-2 hover:text-white">Highlights</Tab>
             <Tab className="hover:bg-blue-400 rounded-xl px-2 hover:text-white">Background</Tab>
-            <Tab className="hover:bg-blue-400 rounded-xl px-2 hover:text-white">Designer && Authorpreneur</Tab>
+            <Tab className="hover:bg-blue-400 rounded-xl px-2 hover:text-white">Track</Tab>
           </Tab.List>
 
           <Tab.Panels>
             {/* Tab One (1) */}
             <Tab.Panel>
-              <p className='h-screen'>Placeholder for now</p>
+              <div className='h-screen'>
+                <div className='max-w-4xl mx-auto'>
+                  <Carousel showArrows={true} showThumbs={true} className="mt-3">
+                    <div>
+                      <img
+                        src='https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671572304/Portfolio/IMG_9814_vt4md3.jpg'
+                        width={750}
+                        height={500}
+                        alt="nordic skiing with my son in Vermont"
+                      />
+                      <p className='legend'>
+                        Nordic skiing with my son at Prospect Mountain in Bennington Vermont ~ 2022
+                      </p>
+                    </div>
+                    <div>
+                      <img
+                        src='https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671575929/Portfolio/P6100006_yvdawo.jpg'
+                        width={750}
+                        height={500}
+                        alt="photo"
+                      />
+                      <p className='legend'>
+                        My brother from another mother and me - motivated Non Commissioned Officers in the US Marine Corps ~ 2008
+                      </p>
+                    </div>
+                    <div>
+                      <img
+                         src='https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671574866/Portfolio/IMG_8654_fhfawp.jpg'
+                        width={750}
+                        height={500}
+                        alt="photo"
+                      />
+                      <p className='legend'>Tankerhoosen River in Connecticut ~ 2022</p>
+                    </div>
+                    <div>
+                      <img
+                        src='https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671574865/Portfolio/IMG_9405_deywfo.jpg'
+                        width={750}
+                        height={500}
+                        alt="photo"
+                      />
+                      <p className='legend'>My homie and his mother who I have known since I was six ~ 2022</p>
+                    </div>
+                    <div>
+                      <img
+                        src='https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671574865/Portfolio/IMG_8707_k6zxiu.jpg'
+                        width={750}
+                        height={500}
+                        alt="photo"
+                      />
+                      <p className='legend'>Mansfield Hollow Lake Connecticut ~ 2022</p>
+                    </div>
+                    <div>
+                      <img
+                        src='https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671574863/Portfolio/C56311BD-064C-48D8-A04E-A31BC1D73C19_1_201_a_ntwfof.jpg'
+                        width={750}
+                        height={500}
+                        alt="photo"
+                      />
+                      <p className='legend'>My good friend Chad and I on a run in Downtown Los Angeles ~ 2022</p>
+                    </div>
+                  </Carousel>
+                </div>
+              </div>
             </Tab.Panel>
 
             {/* Tab Two (2) */}
@@ -151,10 +218,10 @@ const AboutPage = () => {
                     mysteries that before I had just bumbled my way through writing
                     random snippets of code until it worked the way I was hoping.
                   </p>
-                  <p>
+                  <p className='mt-2'>
                     Armed with my new CSS knowledge and fueled by my passion to write
-                    I stepped into a new chapter of my web development story. I
-                    published my novel using{' '}
+                    I stepped into a new chapter of my web development story. I took a giant leap and decided to
+                    publish my novel using{' '}
                     <a
                       href="https://ghost.org/"
                       target="_blank"
@@ -165,13 +232,20 @@ const AboutPage = () => {
                     </a>
                     .
                   </p>
-                  <p className="mt-4">
-                    I think that Ghost CMS is an awesome solution to publish my novel.
+                  <p className="my-4">
+                    I think that Ghost CMS is a great tool.
                     Normally their platform is used for bloggers but after I built my
                     own custom theme it became the perfect solution to manage my
                     growing user base and most importantly keep me in control of my
-                    content.
+                    content. So, without further ado check out the link to my novel below...
                   </p>
+                  <a href='https://www.wormwoodsaga.com' target='_blank' className='w-full mx-auto'>
+                    <img
+                      src='https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671576188/Portfolio/Wormwood_Saga_fsmufv.jpg'
+                      width={300}
+                      className='md:w-1/4 mx-auto'
+                    />
+                  </a>
                 </div>
             </Tab.Panel>
           </Tab.Panels>
@@ -184,5 +258,3 @@ const AboutPage = () => {
     </div>
   )
 }
-
-export default AboutPage

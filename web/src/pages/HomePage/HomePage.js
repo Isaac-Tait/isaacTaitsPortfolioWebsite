@@ -124,17 +124,17 @@ const HomePage = () => {
         </div>
         <div className="justify-center my-auto mx-auto">
           <p>
-            <span role="img" aria-label="evergreen tree">
-              &#127794;{' '}
+            <span role="img" aria-label="spaceship">
+            &#128640;{' '}
             </span>
-            A collection of my{' '}
+            A fun side project{' '}
             <a
-              href="https://isaac-tait.github.io"
+              href="https://starshipfor.sale"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-500 underline hover:bg-blue-500 hover:text-white"
             >
-              writing
+              Starship For Sale
             </a>
           </p>
         </div>
