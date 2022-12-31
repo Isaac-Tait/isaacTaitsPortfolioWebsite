@@ -13,110 +13,104 @@ import tokyo from './tokyoBay.jpg'
 export default function AboutPage() {
   var Carousel = require('react-responsive-carousel').Carousel
   return (
-    <div className="heropattern-kiwi-blue-100">
+    <div className="bg-slate-100 min-h-screen">
       {/* Header */}
-      <div className="py-1 px-2 md:w-1/2 md:mx-auto">
+      <div className="md:w-1/2 md:mx-auto">
         <Link to={routes.home()} className="mx-6">
           <img src={logo} alt="mtntpcdng" />
         </Link>
       </div>
 
-      <div className="flex-1 px-2 min-h-fit">
+      <div className="flex-1 px-2">
         <Tab.Group>
-          <Tab.List className="bg-blue-100 flex justify-between font-semibold text-sm md:text-lg px-6 text-gray-700">
+          <Tab.List className="bg-blue-100 max-w-7xl mx-auto flex justify-between font-semibold text-sm md:text-lg px-6 text-gray-700 rounded-xl">
             <Tab className="hover:bg-blue-400 rounded-xl px-2 hover:text-white">
-              Highlights
+              Photos
             </Tab>
             <Tab className="hover:bg-blue-400 rounded-xl px-2 hover:text-white">
               Background
             </Tab>
             <Tab className="hover:bg-blue-400 rounded-xl px-2 hover:text-white">
-              Track
+              Authorpreneur
             </Tab>
           </Tab.List>
 
           <Tab.Panels>
             {/* Tab One (1) */}
             <Tab.Panel>
-              <div className="h-screen">
-                <div className="max-w-4xl mx-auto">
-                  <Carousel
-                    showArrows={true}
-                    showThumbs={true}
-                    className="mt-3"
-                  >
-                    <div>
-                      <img
-                        src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671572304/Portfolio/IMG_9814_vt4md3.jpg"
-                        width={750}
-                        height={500}
-                        alt="nordic skiing with my son in Vermont"
-                      />
-                      <p className="legend">
-                        Nordic skiing with my son at Prospect Mountain in
-                        Bennington Vermont ~ 2022
-                      </p>
-                    </div>
-                    <div>
-                      <img
-                        src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671575929/Portfolio/P6100006_yvdawo.jpg"
-                        width={750}
-                        height={500}
-                        alt="marine corps days"
-                      />
-                      <p className="legend">
-                        My brother from another mother and me - motivated Non
-                        Commissioned Officers in the US Marine Corps ~ 2008
-                      </p>
-                    </div>
-                    <div>
-                      <img
-                        src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671574866/Portfolio/IMG_8654_fhfawp.jpg"
-                        width={750}
-                        height={500}
-                        alt="tankerhoosen river ct"
-                      />
-                      <p className="legend">
-                        Tankerhoosen River in Connecticut ~ 2022
-                      </p>
-                    </div>
-                    <div>
-                      <img
-                        src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671574865/Portfolio/IMG_9405_deywfo.jpg"
-                        width={750}
-                        height={500}
-                        alt="my friend landon and his mother"
-                      />
-                      <p className="legend">
-                        My homie and his mother who I have known since I was six
-                        ~ 2022
-                      </p>
-                    </div>
-                    <div>
-                      <img
-                        src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671574865/Portfolio/IMG_8707_k6zxiu.jpg"
-                        width={750}
-                        height={500}
-                        alt="A nice lake to fish for Perch"
-                      />
-                      <p className="legend">
-                        Mansfield Hollow Lake Connecticut ~ 2022
-                      </p>
-                    </div>
-                    <div>
-                      <img
-                        src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671574863/Portfolio/C56311BD-064C-48D8-A04E-A31BC1D73C19_1_201_a_ntwfof.jpg"
-                        width={750}
-                        height={500}
-                        alt="my buddy Chad and I on a run in DT LA"
-                      />
-                      <p className="legend">
-                        My good friend Chad and I on a run in Downtown Los
-                        Angeles ~ 2022
-                      </p>
-                    </div>
-                  </Carousel>
-                </div>
+              <div className="max-w-4xl mx-auto">
+                <Carousel showArrows={true} showThumbs={true} className="mt-3">
+                  <div>
+                    <img
+                      src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671572304/Portfolio/IMG_9814_vt4md3.jpg"
+                      width={750}
+                      height={500}
+                      alt="nordic skiing with my son in Vermont"
+                    />
+                    <p className="legend">
+                      Nordic skiing with my son at Prospect Mountain in
+                      Bennington Vermont ~ 2022
+                    </p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671575929/Portfolio/P6100006_yvdawo.jpg"
+                      width={750}
+                      height={500}
+                      alt="marine corps days"
+                    />
+                    <p className="legend">
+                      My brother from another mother and me - motivated Non
+                      Commissioned Officers in the US Marine Corps ~ 2008
+                    </p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671574866/Portfolio/IMG_8654_fhfawp.jpg"
+                      width={750}
+                      height={500}
+                      alt="tankerhoosen river ct"
+                    />
+                    <p className="legend">
+                      Tankerhoosen River in Connecticut ~ 2022
+                    </p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671574865/Portfolio/IMG_9405_deywfo.jpg"
+                      width={750}
+                      height={500}
+                      alt="my friend landon and his mother"
+                    />
+                    <p className="legend">
+                      My homie and his mother who I have known since I was six ~
+                      2022
+                    </p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671574865/Portfolio/IMG_8707_k6zxiu.jpg"
+                      width={750}
+                      height={500}
+                      alt="A nice lake to fish for Perch"
+                    />
+                    <p className="legend">
+                      Mansfield Hollow Lake Connecticut ~ 2022
+                    </p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671574863/Portfolio/C56311BD-064C-48D8-A04E-A31BC1D73C19_1_201_a_ntwfof.jpg"
+                      width={750}
+                      height={500}
+                      alt="my buddy Chad and I on a run in DT LA"
+                    />
+                    <p className="legend">
+                      My good friend Chad and I on a run in Downtown Los Angeles
+                      ~ 2022
+                    </p>
+                  </div>
+                </Carousel>
               </div>
             </Tab.Panel>
 
@@ -192,9 +186,10 @@ export default function AboutPage() {
                 </p>
               </div>
             </Tab.Panel>
+
             {/* Tab Three (3) */}
             <Tab.Panel>
-              <div className="max-w-6xl mx-auto mt-4 mb-10">
+              <div className="max-w-6xl mx-auto mt-4 mb-10 text-lg tracking-wide">
                 <p
                   className="pt-6 first-line:uppercase first-line:tracking-widest
                           first-letter:text-7xl first-letter:font-bold first-letter:text-slate-900
@@ -207,7 +202,7 @@ export default function AboutPage() {
                     href="https://isaac-tait.github.io/"
                     target="_blank"
                     rel="noreferrer"
-                    className="underline underline-offset-4 hover:decoration-wavy hover:underline-offset-4"
+                    className="underline underline-offset-4 hover:decoration-wavy hover:underline-offset-4 hover:decoration-pink-500"
                   >
                     writing vitae here
                   </a>
@@ -229,7 +224,7 @@ export default function AboutPage() {
                     href="https://css-for-js.dev/"
                     target="_blank"
                     rel="noreferrer"
-                    className="underline underline-offset-4 hover:decoration-wavy hover:underline-offset-4"
+                    className="underline underline-offset-4 hover:decoration-wavy hover:underline-offset-4 hover:decoration-pink-500"
                   >
                     Josh Comeau&#39;s course &quot;CSS For JS&quot;
                   </a>{' '}
@@ -247,7 +242,7 @@ export default function AboutPage() {
                     href="https://ghost.org/"
                     target="_blank"
                     rel="noreferrer"
-                    className="underline underline-offset-4 hover:decoration-wavy hover:underline-offset-2"
+                    className="underline underline-offset-4 hover:decoration-wavy hover:underline-offset-2 hover:decoration-pink-500"
                   >
                     Ghost CMS
                   </a>
@@ -271,6 +266,7 @@ export default function AboutPage() {
                     src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671576188/Portfolio/Wormwood_Saga_fsmufv.jpg"
                     width={300}
                     className="md:w-1/4 mx-auto"
+                    alt="my novel"
                   />
                 </a>
               </div>
