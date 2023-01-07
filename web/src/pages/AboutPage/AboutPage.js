@@ -38,12 +38,12 @@ export default function AboutPage() {
           <Tab.Panels>
             {/* Tab One (1) */}
             <Tab.Panel>
-              <div className="max-w-4xl mx-auto">
+              <div className="max-w-4xl mx-auto pb-4">
                 <Carousel showArrows={true} showThumbs={true} className="mt-3">
                   <div>
                     <img
                       src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671572304/Portfolio/IMG_9814_vt4md3.jpg"
-                      width={750}
+                      width={550}
                       height={500}
                       alt="nordic skiing with my son in Vermont"
                     />
@@ -55,7 +55,7 @@ export default function AboutPage() {
                   <div>
                     <img
                       src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671575929/Portfolio/P6100006_yvdawo.jpg"
-                      width={750}
+                      width={550}
                       height={500}
                       alt="marine corps days"
                     />
@@ -67,7 +67,7 @@ export default function AboutPage() {
                   <div>
                     <img
                       src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671574866/Portfolio/IMG_8654_fhfawp.jpg"
-                      width={750}
+                      width={550}
                       height={500}
                       alt="tankerhoosen river ct"
                     />
@@ -78,7 +78,7 @@ export default function AboutPage() {
                   <div>
                     <img
                       src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671574865/Portfolio/IMG_9405_deywfo.jpg"
-                      width={750}
+                      width={550}
                       height={500}
                       alt="my friend landon and his mother"
                     />
@@ -90,7 +90,7 @@ export default function AboutPage() {
                   <div>
                     <img
                       src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671574865/Portfolio/IMG_8707_k6zxiu.jpg"
-                      width={750}
+                      width={550}
                       height={500}
                       alt="A nice lake to fish for Perch"
                     />
@@ -101,7 +101,7 @@ export default function AboutPage() {
                   <div>
                     <img
                       src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671574863/Portfolio/C56311BD-064C-48D8-A04E-A31BC1D73C19_1_201_a_ntwfof.jpg"
-                      width={750}
+                      width={550}
                       height={500}
                       alt="my buddy Chad and I on a run in DT LA"
                     />
