@@ -219,7 +219,7 @@ export default function AboutPage() {
                   the front end and human centered design. I felt more
                   comfortable in that space of web development. I adopted
                   TailwindCSS early on, back when it was version 1.0. However,
-                  my CSS skills were pretty rough that is until I stumbled upon{' '}
+                  my CSS skills were pretty rough. Then I started{' '}
                   <a
                     href="https://css-for-js.dev/"
                     target="_blank"
@@ -227,11 +227,11 @@ export default function AboutPage() {
                     className="underline underline-offset-4 hover:decoration-wavy hover:underline-offset-4 hover:decoration-pink-500"
                   >
                     Josh Comeau&#39;s course &quot;CSS For JS&quot;
-                  </a>{' '}
-                  Suddenly I was able to understand, troubleshoot, and solve CSS
-                  mysteries that before I had just bumbled my way through
-                  writing random snippets of code until it worked the way I was
-                  hoping.
+                  </a>
+                  .&nbsp;Suddenly I was able to understand, troubleshoot, and
+                  solve CSS mysteries that before I had just bumbled my way
+                  through writing random snippets of code until it worked the
+                  way I was hoping.
                 </p>
                 <p className="mt-2">
                   Armed with my new CSS knowledge and fueled by my passion to
@@ -256,6 +256,12 @@ export default function AboutPage() {
                   So, without further ado check out the link to my novel
                   below...
                 </p>
+                <p className="text-center italic font-light text-sm pb-2">
+                  This image is the link
+                  <span role="img" aria-label="finger pointing down">
+                    &#128071;
+                  </span>
+                </p>
                 <a
                   href="https://www.wormwoodsaga.com"
                   target="_blank"
@@ -265,7 +271,7 @@ export default function AboutPage() {
                   <img
                     src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671576188/Portfolio/Wormwood_Saga_fsmufv.jpg"
                     width={300}
-                    className="md:w-1/4 mx-auto"
+                    className="md:w-1/4 mx-auto border-dotted border-2 border-black p-1"
                     alt="my novel"
                   />
                 </a>
