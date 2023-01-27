@@ -13,7 +13,7 @@ import tokyo from './tokyoBay.jpg'
 export default function AboutPage() {
   var Carousel = require('react-responsive-carousel').Carousel
   return (
-    <div className="bg-slate-100 min-h-screen">
+    <div className="bg-slate-100 h-screen flex flex-col">
       {/* Header */}
       <div className="md:w-1/2 md:mx-auto">
         <Link to={routes.home()} className="mx-6">
@@ -21,9 +21,9 @@ export default function AboutPage() {
         </Link>
       </div>
 
-      <div className="flex-1 px-2">
+      <div className="flex flex-col flex-1 px-2">
         <Tab.Group>
-          <Tab.List className="bg-blue-100 max-w-7xl mx-auto flex justify-between font-semibold text-sm md:text-lg px-6 text-gray-700 rounded-xl">
+          <Tab.List className="bg-blue-100 flex justify-between font-semibold text-sm md:text-lg text-gray-700 rounded-xl">
             <Tab className="hover:bg-blue-400 rounded-xl px-2 hover:text-white">
               Photos
             </Tab>
@@ -36,155 +36,153 @@ export default function AboutPage() {
           </Tab.List>
 
           <Tab.Panels>
-            {/* Tab One (1) */}
-            <Tab.Panel>
-              <div className="max-w-4xl mx-auto pb-4">
-                <Carousel showArrows={true} showThumbs={true} className="mt-3">
-                  <div>
-                    <img
-                      src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671572304/Portfolio/IMG_9814_vt4md3.jpg"
-                      width={550}
-                      height={500}
-                      alt="nordic skiing with my son in Vermont"
-                    />
-                    <p className="legend">
-                      Nordic skiing with my son at Prospect Mountain in
-                      Bennington Vermont ~ 2022
-                    </p>
-                  </div>
-                  <div>
-                    <img
-                      src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671575929/Portfolio/P6100006_yvdawo.jpg"
-                      width={550}
-                      height={500}
-                      alt="marine corps days"
-                    />
-                    <p className="legend">
-                      My brother from another mother and me - motivated Non
-                      Commissioned Officers in the US Marine Corps ~ 2008
-                    </p>
-                  </div>
-                  <div>
-                    <img
-                      src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671574866/Portfolio/IMG_8654_fhfawp.jpg"
-                      width={550}
-                      height={500}
-                      alt="tankerhoosen river ct"
-                    />
-                    <p className="legend">
-                      Tankerhoosen River in Connecticut ~ 2022
-                    </p>
-                  </div>
-                  <div>
-                    <img
-                      src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671574865/Portfolio/IMG_9405_deywfo.jpg"
-                      width={550}
-                      height={500}
-                      alt="my friend landon and his mother"
-                    />
-                    <p className="legend">
-                      My homie and his mother who I have known since I was six ~
-                      2022
-                    </p>
-                  </div>
-                  <div>
-                    <img
-                      src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671574865/Portfolio/IMG_8707_k6zxiu.jpg"
-                      width={550}
-                      height={500}
-                      alt="A nice lake to fish for Perch"
-                    />
-                    <p className="legend">
-                      Mansfield Hollow Lake Connecticut ~ 2022
-                    </p>
-                  </div>
-                  <div>
-                    <img
-                      src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671574863/Portfolio/C56311BD-064C-48D8-A04E-A31BC1D73C19_1_201_a_ntwfof.jpg"
-                      width={550}
-                      height={500}
-                      alt="my buddy Chad and I on a run in DT LA"
-                    />
-                    <p className="legend">
-                      My good friend Chad and I on a run in Downtown Los Angeles
-                      ~ 2022
-                    </p>
-                  </div>
-                </Carousel>
-              </div>
+            {/* Tab One (1) Photos */}
+            <Tab.Panel className="max-w-4xl mx-auto pb-4">
+              <Carousel
+                showArrows={true}
+                showThumbs={false}
+                className="my-3 overflow-hidden"
+              >
+                <div>
+                  <img
+                    src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671572304/Portfolio/IMG_9814_vt4md3.jpg"
+                    width={55}
+                    height={50}
+                    alt="nordic skiing with my son in Vermont"
+                  />
+                  <p className="legend">
+                    Nordic skiing with my son at Prospect Mountain in Bennington
+                    Vermont ~ 2022
+                  </p>
+                </div>
+                <div>
+                  <img
+                    src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671575929/Portfolio/P6100006_yvdawo.jpg"
+                    width={55}
+                    height={50}
+                    alt="marine corps days"
+                  />
+                  <p className="legend">
+                    My brother from another mother and me - motivated Non
+                    Commissioned Officers in the US Marine Corps ~ 2008
+                  </p>
+                </div>
+                <div>
+                  <img
+                    src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671574866/Portfolio/IMG_8654_fhfawp.jpg"
+                    width={55}
+                    height={50}
+                    alt="tankerhoosen river ct"
+                  />
+                  <p className="legend">
+                    Tankerhoosen River in Connecticut ~ 2022
+                  </p>
+                </div>
+                <div>
+                  <img
+                    src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671574865/Portfolio/IMG_9405_deywfo.jpg"
+                    width={55}
+                    height={50}
+                    alt="my friend landon and his mother"
+                  />
+                  <p className="legend">
+                    My homie and his mother who I have known since I was six ~
+                    2022
+                  </p>
+                </div>
+                <div>
+                  <img
+                    src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671574865/Portfolio/IMG_8707_k6zxiu.jpg"
+                    width={55}
+                    height={50}
+                    alt="A nice lake to fish for Perch"
+                  />
+                  <p className="legend">
+                    Mansfield Hollow Lake Connecticut ~ 2022
+                  </p>
+                </div>
+                <div>
+                  <img
+                    src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671574863/Portfolio/C56311BD-064C-48D8-A04E-A31BC1D73C19_1_201_a_ntwfof.jpg"
+                    width={55}
+                    height={50}
+                    alt="my buddy Chad and I on a run in DT LA"
+                  />
+                  <p className="legend">
+                    My good friend Chad and I on a run in Downtown Los Angeles ~
+                    2022
+                  </p>
+                </div>
+              </Carousel>
             </Tab.Panel>
 
-            {/* Tab Two (2) */}
-            <Tab.Panel>
-              <div className="max-w-6xl mx-auto mt-4 mb-10 text-lg tracking-wide">
-                <p
-                  className="mt-6 first-line:uppercase first-line:tracking-widest
+            {/* Tab Two (2) Background */}
+            <Tab.Panel className="max-w-6xl mx-auto tracking-wide overflow-auto">
+              <p
+                className="mt-6 first-line:uppercase first-line:tracking-widest
                         first-letter:text-7xl first-letter:font-bold first-letter:text-slate-900
                         first-letter:mr-3 first-letter:float-left"
+              >
+                Greetings and salutations! Welcome to my portfolio, a venue for
+                my web based creations. I am glad you are here.
+              </p>
+              <p className="mt-4">
+                My journey to becoming a web developer started on March 12, 2019
+                when I kicked off my first web development course on Codecademy.
+                However, to fully grasp my genesis as a web designer, creator,
+                hacker - I have to go back a little further than that...
+              </p>
+              <img
+                src={picture}
+                alt="Isaac Tait's profile"
+                className="h-60 w-80 m-4 rounded-lg shadow-lg mx-auto"
+              />
+              <p className="mt-2">
+                On January 1, 2017 my son Tadashi was born in Fukushima
+                Prefecture, Japan. On September 1, 2017 my wife and I legally
+                became his parents. As he grew older I realized that the day was
+                approaching when he would go off to school and my full time
+                responsibilities as a stay-at-home dad would come to an end, and
+                that I would need to find a job.
+              </p>
+              <img
+                src={tokyo}
+                alt="Isaac and Tadashi looking over Tokyo Bay"
+                className="h-100 w-80 m-4 rounded-lg shadow-lg mx-auto"
+              />
+              <p className="mt-2">
+                When I first learned to ski I lamented the fact that I had not
+                discovered skiing sooner in life. A similar feeling of lost time
+                overcame me when I first started learning web development. In a
+                way though perhaps it was a good thing because I felt that I had
+                to make up for lost time and so I pushed myself to discover and
+                learn all that I could about web development.
+              </p>
+              <p className="mt-2">
+                Since my journey as a web developer began I have had a lot of
+                fun building some cool apps (IMHO) and created some fun
+                projects. This website is a venue for those endeavors. So, stay
+                for a while, poke around a bit, or follow me on&nbsp;
+                <a
+                  href="https://twitter.com/Isaac_Tait_83"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500"
                 >
-                  Greetings and salutations! Welcome to my portfolio, a venue
-                  for my web based creations. I am glad you are here.
-                </p>
-                <p className="mt-4">
-                  My journey to becoming a web developer started on March 12,
-                  2019 when I kicked off my first web development course on
-                  Codecademy. However, to fully grasp my genesis as a web
-                  designer, creator, hacker - I have to go back a little further
-                  than that...
-                </p>
-                <img
-                  src={picture}
-                  alt="Isaac Tait's profile"
-                  className="h-60 w-80 m-4 rounded-lg shadow-lg mx-auto"
-                />
-                <p className="mt-2">
-                  On January 1, 2017 my son Tadashi was born in Fukushima
-                  Prefecture, Japan. On September 1, 2017 my wife and I legally
-                  became his parents. As he grew older I realized that the day
-                  was approaching when he would go off to school and my full
-                  time responsibilities as a stay-at-home dad would come to an
-                  end, and that I would need to find a job.
-                </p>
-                <img
-                  src={tokyo}
-                  alt="Isaac and Tadashi looking over Tokyo Bay"
-                  className="h-100 w-80 m-4 rounded-lg shadow-lg mx-auto"
-                />
-                <p className="mt-2">
-                  When I first learned to ski I lamented the fact that I had not
-                  discovered skiing sooner in life. A similar feeling of lost
-                  time overcame me when I first started learning web
-                  development. In a way though perhaps it was a good thing
-                  because I felt that I had to make up for lost time and so I
-                  pushed myself to discover and learn all that I could about web
-                  development.
-                </p>
-                <p className="mt-2">
-                  Since my journey as a web developer began I have had a lot of
-                  fun building some cool apps (IMHO) and created some fun
-                  projects. This website is a venue for those endeavors. So,
-                  stay for a while, poke around a bit, or follow me on&nbsp;
-                  <a
-                    href="https://twitter.com/Isaac_Tait_83"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-500"
-                  >
-                    Twitter
-                  </a>{' '}
-                  or{' '}
-                  <a
-                    href="https://github.com/Isaac-Tait"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-500"
-                  >
-                    GitHub
-                  </a>
-                  &nbsp;to keep abreast of my future projects and upward
-                  trajectory. Cheers!
-                </p>
-              </div>
+                  Twitter
+                </a>{' '}
+                or{' '}
+                <a
+                  href="https://github.com/Isaac-Tait"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500"
+                >
+                  GitHub
+                </a>
+                &nbsp;to keep abreast of my future projects and upward
+                trajectory. Cheers!
+              </p>
             </Tab.Panel>
 
             {/* Tab Three (3) */}
@@ -281,7 +279,7 @@ export default function AboutPage() {
         </Tab.Group>
       </div>
 
-      <div className="fixed bottom-0 w-full">
+      <div className="fixed bottom-0 w-full z-10">
         <Footer />
       </div>
     </div>
