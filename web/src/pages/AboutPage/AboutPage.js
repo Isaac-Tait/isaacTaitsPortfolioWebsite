@@ -46,8 +46,6 @@ export default function AboutPage() {
                 <div>
                   <img
                     src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671572304/Portfolio/IMG_9814_vt4md3.jpg"
-                    width={55}
-                    height={50}
                     alt="nordic skiing with my son in Vermont"
                   />
                   <p className="legend">
@@ -58,8 +56,6 @@ export default function AboutPage() {
                 <div>
                   <img
                     src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671575929/Portfolio/P6100006_yvdawo.jpg"
-                    width={55}
-                    height={50}
                     alt="marine corps days"
                   />
                   <p className="legend">
@@ -70,8 +66,6 @@ export default function AboutPage() {
                 <div>
                   <img
                     src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671574866/Portfolio/IMG_8654_fhfawp.jpg"
-                    width={55}
-                    height={50}
                     alt="tankerhoosen river ct"
                   />
                   <p className="legend">
@@ -81,8 +75,6 @@ export default function AboutPage() {
                 <div>
                   <img
                     src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671574865/Portfolio/IMG_9405_deywfo.jpg"
-                    width={55}
-                    height={50}
                     alt="my friend landon and his mother"
                   />
                   <p className="legend">
@@ -93,8 +85,6 @@ export default function AboutPage() {
                 <div>
                   <img
                     src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671574865/Portfolio/IMG_8707_k6zxiu.jpg"
-                    width={55}
-                    height={50}
                     alt="A nice lake to fish for Perch"
                   />
                   <p className="legend">
@@ -104,8 +94,6 @@ export default function AboutPage() {
                 <div>
                   <img
                     src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1671574863/Portfolio/C56311BD-064C-48D8-A04E-A31BC1D73C19_1_201_a_ntwfof.jpg"
-                    width={55}
-                    height={50}
                     alt="my buddy Chad and I on a run in DT LA"
                   />
                   <p className="legend">
