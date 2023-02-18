@@ -64,21 +64,35 @@ const HomePage = () => {
           <span role="img" aria-label="waving hand">
             &#128075;
           </span>
-          , I am <span className="text-blue-500">Isaac Tait</span> - a Jamstack
-          web developer who loves the outdoors.
+          ,&nbsp;my name is <span className="text-blue-500">Isaac Tait</span> -
+          a Jamstack web developer who loves the outdoors.
+          <div className="h-64 w-64 bg-blue-300 rounded-full -mt-48 -ml-8"></div>
         </p>
       </div>
 
       {/*Block Three*/}
-      <div className="rounded-lg shadow-lg mb-2 h-screen flex flex-col content-center text-xs bg-blue-300 md:text-base">
-        <div className="justify-center my-auto mx-auto">
+      <div className="rounded-lg shadow-lg mb-2 h-screen flex bg-blue-300 md:text-base">
+        {/* A cool idea... need to figure out how to center everything one on top of the other...
+        <div className="grid grid-cols-3 gap-2 justify-center mx-auto my-auto inset-0 items-center">
+          <div className="h-32 w-20 bg-blue-50 rounded-3xl ml-10"></div>
+          <div className="h-32 w-32 bg-blue-100 rounded-tl-full"></div>
+          <div className="h-32 w-32 bg-blue-200 rounded-r-2xl"></div>
+          <div className="h-32 w-32 bg-blue-400 rounded-l-full"></div>
+          <div className="h-32 w-32 bg-blue-500 rounded-t-xl"></div>
+          <div className="h-32 w-32 bg-blue-600 rounded-br-3xl"></div>
+          <div className="h-28 w-28 bg-blue-700 rounded-full ml-4"></div>
+          <div className="h-28 w-28 bg-blue-800 rounded-full ml-4"></div>
+          <div className="h-28 w-28 bg-blue-900 rounded-full ml-4"></div>
+        </div>
+        */}
+        <div className="my-auto mx-auto">
           <p>
             <span role="img" aria-label="ufo flying saucer">
               &#128760;{' '}
             </span>
             <Link
               to={routes.about()}
-              className="text-blue-500 underline hover:bg-blue-500 hover:text-white"
+              className="text-blue-500 underline hover:bg-blue-500 hover:text-white p-1 rounded-sm"
             >
               About
             </Link>
@@ -95,7 +109,7 @@ const HomePage = () => {
               href="https://mountaintopcoding.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 underline hover:bg-blue-500 hover:text-white"
+              className="text-blue-500 underline hover:bg-blue-500 hover:text-white p-1 rounded-sm"
             >
               <code>
                 mountainTopCoding(
@@ -116,7 +130,7 @@ const HomePage = () => {
             <a
               href="https://mountaintop-coding.s3.us-west-1.amazonaws.com/Isaac_Tait_Resume_Portfolio.pdf"
               rel="noopener noreferrer"
-              className="text-blue-500 underline hover:bg-blue-500 hover:text-white"
+              className="text-blue-500 underline hover:bg-blue-500 hover:text-white p-1 rounded-sm"
             >
               Resume
             </a>
@@ -125,14 +139,14 @@ const HomePage = () => {
         <div className="justify-center my-auto mx-auto">
           <p>
             <span role="img" aria-label="spaceship">
-            &#128640;{' '}
+              &#128640;{' '}
             </span>
             A fun side project{' '}
             <a
               href="https://starshipfor.sale"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 underline hover:bg-blue-500 hover:text-white"
+              className="text-blue-500 underline hover:bg-blue-500 hover:text-white p-1 rounded-sm"
             >
               Starship For Sale
             </a>
