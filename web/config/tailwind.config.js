@@ -1,5 +1,5 @@
-const heropatterns = require('tailwindcss-hero-patterns/src/patterns')
 const colors = require('tailwindcss/colors')
+const heropatterns = require('tailwindcss-hero-patterns/src/patterns')
 
 module.exports = {
   mode: 'jit',

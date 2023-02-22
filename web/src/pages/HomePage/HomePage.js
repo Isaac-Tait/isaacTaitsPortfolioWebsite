@@ -64,14 +64,15 @@ const HomePage = () => {
           <span role="img" aria-label="waving hand">
             &#128075;
           </span>
-          ,&nbsp;my name is <span className="text-blue-500">Isaac Tait</span> -
-          a Jamstack web developer who loves the outdoors.
+          ,&nbsp;my name is&nbsp;
+          <span className="text-blue-500">Isaac Tait</span>&nbsp;- a Jamstack
+          web developer who loves the outdoors.
           <div className="h-64 w-64 bg-blue-300 rounded-full -mt-48 -ml-8"></div>
         </p>
       </div>
 
       {/*Block Three*/}
-      <div className="rounded-lg shadow-lg mb-2 h-screen flex bg-blue-300 md:text-base">
+      <div className="rounded-lg shadow-lg mb-2 w-full h-screen flex bg-blue-300 md:text-base relative">
         {/* A cool idea... need to figure out how to center everything one on top of the other...
         <div className="grid grid-cols-3 gap-2 justify-center mx-auto my-auto inset-0 items-center">
           <div className="h-32 w-20 bg-blue-50 rounded-3xl ml-10"></div>
@@ -85,72 +86,71 @@ const HomePage = () => {
           <div className="h-28 w-28 bg-blue-900 rounded-full ml-4"></div>
         </div>
         */}
-        <div className="my-auto mx-auto">
-          <p>
-            <span role="img" aria-label="ufo flying saucer">
-              &#128760;{' '}
-            </span>
-            <Link
-              to={routes.about()}
-              className="text-blue-500 underline hover:bg-blue-500 hover:text-white p-1 rounded-sm"
-            >
-              About
-            </Link>
-            &nbsp;Me
-          </p>
-        </div>
-        <div className="justify-center my-auto mx-auto">
-          <p>
-            <span role="img" aria-label="snow capped mountain">
-              &#128507;{' '}
-            </span>
-            The OG{' '}
-            <a
-              href="https://mountaintopcoding.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-500 underline hover:bg-blue-500 hover:text-white p-1 rounded-sm"
-            >
-              <code>
+        <div className="grid grid-cols-4 mx-auto">
+          {/* About Me */}
+          <div className="flex content-start justify-center">
+            <p className="z-50 mt-40 tracking-wide font-bold">
+              {/*
+              <span role="img" aria-label="ufo flying saucer">
+                &#128760;{' '}
+              </span>
+              */}
+              <Link
+                to={routes.about()}
+                className="text-white hover:bg-blue-500 hover:text-white p-1 rounded-sm"
+              >
+                About
+              </Link>
+              &nbsp;me
+            </p>
+            <section className="w-24 h-24 bg-blue-200 rounded-3xl mt-32 -ml-8"></section>
+          </div>
+          {/* OG */}
+          <div className="flex items-center">
+            <p className="-mt-40 z-0 tracking-wide font-bold">
+              The OG{' '}
+              <a
+                href="https://mountaintopcoding.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:bg-blue-500 hover:text-white p-1 rounded-sm"
+              >
                 mountainTopCoding(
                 <span role="img" aria-label="mountain with snow-cap">
                   &#127956;
                 </span>
                 );
-              </code>
-            </a>
-          </p>
-        </div>
-        <div className="justify-center my-auto mx-auto">
-          <p>
-            <span role="img" aria-label="japanese castle">
-              &#127983;{' '}
-            </span>
-            My{' '}
-            <a
-              href="https://mountaintop-coding.s3.us-west-1.amazonaws.com/Isaac_Tait_Resume_Portfolio.pdf"
-              rel="noopener noreferrer"
-              className="text-blue-500 underline hover:bg-blue-500 hover:text-white p-1 rounded-sm"
-            >
-              Resume
-            </a>
-          </p>
-        </div>
-        <div className="justify-center my-auto mx-auto">
-          <p>
-            <span role="img" aria-label="spaceship">
-              &#128640;{' '}
-            </span>
-            A fun side project{' '}
-            <a
-              href="https://starshipfor.sale"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-500 underline hover:bg-blue-500 hover:text-white p-1 rounded-sm"
-            >
-              Starship For Sale
-            </a>
-          </p>
+              </a>
+            </p>
+            <section className="w-20 h-20 bg-blue-200 rounded-2xl -ml-60 -mt-40"></section>
+          </div>
+          {/* Resume */}
+          <div className="flex items-center justify-center">
+            <p className="mt-40 tracking-wide font-bold">
+              My{' '}
+              <a
+                href="https://mountaintop-coding.s3.us-west-1.amazonaws.com/Isaac_Tait_Resume_Portfolio.pdf"
+                rel="noopener noreferrer"
+                className="text-white hover:bg-blue-500 hover:text-white p-1 rounded-sm"
+              >
+                resume
+              </a>
+            </p>
+          </div>
+          {/* Starship for Sale */}
+          <div className="flex items-end">
+            <p className="mb-40 tracking-wide font-bold">
+              A fun side project{' '}
+              <a
+                href="https://starshipfor.sale"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:bg-blue-500 hover:text-white p-1 rounded-sm"
+              >
+                Starship For Sale
+              </a>
+            </p>
+          </div>
         </div>
       </div>
 
