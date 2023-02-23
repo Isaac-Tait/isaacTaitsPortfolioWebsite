@@ -72,7 +72,7 @@ const HomePage = () => {
       </div>
 
       {/*Block Three*/}
-      <div className="rounded-lg shadow-lg mb-2 w-full h-screen flex bg-blue-300 md:text-base relative">
+      <div className="rounded-lg shadow-lg mb-2 w-full h-screen flex bg-blue-300 md:text-base">
         {/* A cool idea... need to figure out how to center everything one on top of the other...
         <div className="grid grid-cols-3 gap-2 justify-center mx-auto my-auto inset-0 items-center">
           <div className="h-32 w-20 bg-blue-50 rounded-3xl ml-10"></div>
@@ -86,10 +86,10 @@ const HomePage = () => {
           <div className="h-28 w-28 bg-blue-900 rounded-full ml-4"></div>
         </div>
         */}
-        <div className="grid grid-cols-4 mx-auto">
+        <div className="flex flex-col justify-between grow md:grid grid-cols-4 md:gap-2 mx-auto">
           {/* About Me */}
-          <div className="flex content-start justify-center">
-            <p className="z-50 mt-40 tracking-wide font-bold">
+          <div className="flex justify-center mt-20">
+            <p className="z-50 md:mt-40 tracking-wide font-bold">
               {/*
               <span role="img" aria-label="ufo flying saucer">
                 &#128760;{' '}
@@ -103,11 +103,12 @@ const HomePage = () => {
               </Link>
               &nbsp;me
             </p>
-            <section className="w-24 h-24 bg-blue-200 rounded-3xl mt-32 -ml-8"></section>
+            <div className="w-24 h-24 bg-blue-200 rounded-3xl mt-32 -ml-8 hidden md:block"></div>
           </div>
           {/* OG */}
-          <div className="flex items-center">
-            <p className="-mt-40 z-0 tracking-wide font-bold">
+          <div className="flex justify-center md:flex-col md:items-center md:justify-between">
+            <div className="w-20 h-20 bg-blue-200 rounded-2xl mt-16 -mr-16 hidden md:block"></div>
+            <p className="items-start tracking-wide font-bold z-0">
               The OG{' '}
               <a
                 href="https://mountaintopcoding.com"
@@ -122,11 +123,13 @@ const HomePage = () => {
                 );
               </a>
             </p>
-            <section className="w-20 h-20 bg-blue-200 rounded-2xl -ml-60 -mt-40"></section>
+            <div className="h-24 w-24 bg-blue-200 rounded-full -mt-20 hidden md:block"></div>
+            <div className="h-16 w-20 bg-blue-200 rounded-2xl mb-16 ml-16 hidden md:block"></div>
           </div>
           {/* Resume */}
-          <div className="flex items-center justify-center">
-            <p className="mt-40 tracking-wide font-bold">
+          <div className="flex justify-center md:flex-col md:items-center md:justify-between">
+            <div className="h-20 w-20 bg-blue-200 rounded-full mt-20 hidden md:block"></div>
+            <p className="md:mt-40 tracking-wide font-bold">
               My{' '}
               <a
                 href="https://mountaintop-coding.s3.us-west-1.amazonaws.com/Isaac_Tait_Resume_Portfolio.pdf"
@@ -136,9 +139,11 @@ const HomePage = () => {
                 resume
               </a>
             </p>
+            <div className="h-16 w-20 bg-blue-200 rounded-2xl mb-32 hidden md:block"></div>
           </div>
           {/* Starship for Sale */}
-          <div className="flex items-end">
+          <div className="flex justify-center md:flex-col md:justify-end ">
+            <div className="h-40 w-40 bg-blue-200 rounded-full mb-32 mx-auto hidden md:block"></div>
             <p className="mb-40 tracking-wide font-bold">
               A fun side project{' '}
               <a
