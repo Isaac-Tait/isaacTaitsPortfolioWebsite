@@ -24,6 +24,7 @@ module.exports = {
       blue: colors.blue,
       green: colors.green,
       slate: colors.slate,
+      violet: colors.violet,
     },
     linearGradientColors: (theme) => theme('colors'),
     heroPatterns: {
