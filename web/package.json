@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.3.4",
+    "netlify-cms": "^2.10.192",
     "postcss": "^8.3.6",
     "postcss-loader": "6.1.1",
     "tailwindcss": "latest"
