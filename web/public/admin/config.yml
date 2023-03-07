@@ -7,12 +7,12 @@ media_folder: "web/src/assets/uploads" # Media files will be stored in the repo 
 public_folder: "uploads" # The src attribute for uploaded media will begin with /uploads
 
 collections:
-  - name: "post"
+  - name: "blog"
     label: "Blog Post"
     folder: "content/posts"
     create: true
-    slug: 'index'
-    path: '{{title}}/index'
+    slug: {{slug}}
+    preview_path: blog/{{slug}}
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
